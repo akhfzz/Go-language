@@ -1,0 +1,16 @@
+What is difference between printIn and printf?
+    printIn for string, then printf about output string+variable
+
+%T for type
+%v for varchar/variable
+%b for base 2 or binner
+%o base 8
+%x base 16 
+%d for integer
+%e for floating give equal
+%f for floating/pembulatan float
+%g full floating
+%q for read a string
+%f ==> %(width.precision)f
+%q ==> %(width.precision)q
+%07d => 0 width len 7
