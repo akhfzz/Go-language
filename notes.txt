@@ -2,6 +2,7 @@ What is difference between printIn and printf?
     printIn for string, then printf about output string+variable
 
 %T for type
+%t for type or specify
 %v for varchar/variable
 %b for base 2 or binner
 %o base 8
@@ -14,3 +15,11 @@ What is difference between printIn and printf?
 %f ==> %(width.precision)f
 %q ==> %(width.precision)q
 %07d => 0 width len 7
+
+cap vs len 
+cap ==> how the capacity of underlaying array
+len ==> how many items in array
+
+dictionary ==> map 
+set ==> struct 
+list ==> list

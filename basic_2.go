@@ -1,29 +1,37 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strconv"
 )
 
 func main() {
-	x := bufio.NewScanner(os.Stdin)
-	fmt.Printf("Mau berapa: ")
-	x.Scan()
-	input, _ := strconv.ParseInt(x.Text(), 10, 64)
-	y := int64(0)
-	//* conditional *
-	if input < y {
-		fmt.Println("x lebih kecil dari y")
-	} else if input == y {
-		fmt.Println("sama saja")
-	} else {
-		fmt.Println("x lebih besar dari y")
+	// old
+	var data [3]int
+	data[0] = 10
+	data[1] = 20
+	data[2] = 30
+	fmt.Println(data)
+
+	// new
+	// arr := [4]string{"cinta", "kamu", "love", "you"}
+	twoD_arr := [3][4]int{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}
+	fmt.Println(twoD_arr)
+
+	//dict
+	dictio := map[string]string{
+		"nama":     "izal",
+		"prodi":    "informatika",
+		"angkatan": "2019",
 	}
-	// * looping *
-	for ; y < input; y++ { //or for y < x
-		fmt.Println("Masih belum")
-		// y++
-	}
+	fmt.Println(dictio)
+
+	//slice
+	x := []int{10, 18, 21, 23, 30}
+	z := x[1:3]
+	fmt.Println(cap(x))
+	fmt.Println(z)
+	b := append(x, 15)
+	fmt.Println(b)
+	a := make([]int, 5)
+	fmt.Println(a)
 }
