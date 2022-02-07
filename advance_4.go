@@ -20,6 +20,6 @@ func main() {
 	txt := "aku"
 	changeValue(&txt)
 	fmt.Println(txt)
-	// changeValue2(&txt)
-	// fmt.Println(txt)
+	changeValue2(txt)
+	fmt.Println(txt)
 }
